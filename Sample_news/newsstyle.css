@@ -1,0 +1,270 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #e1dae8;
+}
+
+.navbar {
+  width: 85%;
+  margin: 0px auto 0px auto;
+  background-color: #873cc4;
+  background-image: linear-gradient(#873cc4, #c4b5d1);
+}
+
+.navbar ul {
+  margin: 0px;
+  padding: 0px;
+  list-style-type: none;
+  margin: 25px auto 25px auto;
+  text-align: center;
+}
+
+.navbar li {
+  text-align: center;
+  display: inline-block;
+  width: 10%;
+  height: 30px;
+  margin: 25px auto 25px auto;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 20px;
+  color: white;
+  background-color: rgb(124, 90, 153);
+  background-color: rgba(124, 90, 153, 0.5);
+  font-weight: bold;
+}
+
+#heading {
+  width: 30%;
+  height: 100px;
+  margin: 15px auto 15px auto;
+  text-align: center;
+  text-transform: uppercase;
+  color: white;
+  font-family: 'Bungee Inline', cursive;
+  font-size: 85px;
+}
+
+.maincontainer {
+  margin: 0px auto 0px auto;
+  width: 85%;
+  height: 100%;
+  background-color: white;
+  padding-top: 100px;
+}
+
+
+.subheading {
+  margin: 10px auto 10px 0px;
+  width: 25%;
+  height: 60px;
+  background-color: #873cc4;
+  background-image: linear-gradient(#873cc4, #c4b5d1);
+  font-family: 'Montserrat', sans-serif;
+  font-size: 30px;
+  color: white;
+  font-weight: 100;
+  line-height: 60px;
+  vertical-align: middle;
+  text-align: center;
+}
+
+.mainstory {
+  margin: 10px auto 10px auto;
+  width: 100%;
+  height: 300px;
+  background-color: #fcf9ff;
+  line-height: 300px;
+  vertical-align: middle;
+  font-family: "ubuntu" , sans-serif;
+  font-weight: 100;
+  font-size: 22px;
+  color: #b5aeba;
+}
+
+.substory {
+  margin: 10px auto 10px auto;
+  width: 100%;
+  height: 75px;
+  background-color: #fcf9ff;
+  line-height: 75px;
+  vertical-align: middle;
+  font-family: "ubuntu" , sans-serif;
+  font-weight: 100;
+  font-size: 16px;
+  color: #b5aeba;
+}
+
+.coverstories {
+  margin: 0px auto 0px auto;
+  width: 85%;
+}
+
+.sportstories {
+  margin: 100px auto 100px auto;
+  width: 85%;
+}
+
+.storycontainer {
+  margin: 0px auto 100px auto;
+  width: 85%;
+}
+
+.timestamp {
+  border-bottom: 1px solid #b5aeba;
+  margin: 0px auto 10px 0px;
+  width: 30%;
+  height: 30px;
+  line-height: 30px;
+  vertical-align: middle;
+  font-family: "ubuntu" , sans-serif;
+  font-weight: 100;
+  font-size: 16px;
+  color: #b5aeba;
+}
+
+.storytext {
+  margin: 10px auto 10px auto;
+  width: 100%;
+  height: 450px;
+  background-color: #fcf9ff;
+  line-height: 450px;
+  vertical-align: middle;
+  font-family: "ubuntu" , sans-serif;
+  font-weight: 100;
+  font-size: 22px;
+  color: #b5aeba;
+}
+
+.aboutauthor {
+  margin: 10px auto 10px auto;
+  width: 100%;
+  height: 160px;
+  padding: 10px 10px 10px 0;
+  background-color: #fcf9ff;
+}
+
+.authortext {
+  display: inline-block;
+  width: 80%;
+  margin-right: 30px;
+  font-family: "ubuntu" , sans-serif;
+  font-weight: 100;
+  font-size: 16px;
+  color: #b5aeba;
+}
+
+.authorpic {
+  display: inline-block;
+  width: 140px;
+  height: 140px;
+  border-radius: 100%;
+  text-align: center;
+  background-color: white;
+  font-family: "ubuntu" , sans-serif;
+  font-weight: 100;
+  font-size: 16px;
+  color: #b5aeba;
+  line-height: 140px;
+  vertical-align: middle;
+}
+
+.footer {
+  width: 85%;
+  text-align: center;
+  height: 30px;
+  margin: 10px auto 30px auto;
+  background-color: #873cc4;
+  background-image: linear-gradient(#873cc4, #c4b5d1);
+  font-family: 'Montserrat', sans-serif;
+  font-size: 18px;
+  color: white;
+}
+
+.columncontainerleft {
+  margin: 50px 0px 50px 7.4%;
+  width: 42.5%;
+  display: inline-block;
+  background-color: #873cc4;
+  background-image: linear-gradient(#873cc4, #c4b5d1);
+}
+
+.columncontainerright {
+  margin: 50px auto 50px 0px;
+  width: 42.5%;
+  display: inline-block;
+  background-color: #873cc4;
+  background-image: linear-gradient(#873cc4, #c4b5d1);
+}
+
+.subheadingsmall {
+  margin: 10px auto 10px 10px;
+  width: 50%;
+  height: 60px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 24px;
+  color: white;
+  font-weight: 100;
+  line-height: 60px;
+  vertical-align: middle;
+  text-align: left;
+}
+
+.contentpreview {
+  margin: 10px 10px 10px 10px;
+  width: auto;
+  height: 120px;
+  background-color: white;
+  font-family: "ubuntu" , sans-serif;
+  font-weight: 100;
+  font-size: 16px;
+  color: #b5aeba;
+  line-height: 120px;
+  vertical-align: middle;
+}
+
+.alternate {
+  background-color: white;
+  margin: 10px auto 10px 0px;
+  width: 25%;
+  height: 60px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 30px;
+  color: white;
+  font-weight: 100;
+  line-height: 60px;
+  vertical-align: middle;
+  text-align: center;
+}
+
+
+.menu {
+  border: 1px solid white;
+}
+.menu ul {
+  margin: 0px;
+  padding: 0px;
+  list-style-type: none;
+  text-align: center;
+  position: fixed;
+  border: 1px solid white;
+  width: 20%;
+}
+
+.menu li {
+  text-align: center;
+  width: 100%;
+  height: 30px;
+  margin: 0px auto 0px auto;
+  font-family: 'ubuntu', sans-serif;
+  font-size: 20px;
+  color: white;
+  background-color: black;
+  background-image: linear-gradient(black, grey);
+  font-weight: bold;
+  line-height: 30px;
+  vertical-align: middle;
+}

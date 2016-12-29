@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Slider Sample</title>
+    <link rel="stylesheet" type="text/css" href="stylesheet copy.css">
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+  </head>
+  <body>
+    <div id="header-text">
+      <img src ="logo.png">
+      <div id="headertitle"><a href ="/Users/billyarnold/Desktop/Portfolio/Portfolio site/Home.html">  Billy Arnold </a></div>
+      </div>
+
+    <div class="contenttitle">
+      Sample Slider
+    </div>
+
+    <div class="contentdescription">
+      The below is some sample code and a preview of a slider that anyone could use. I have even used it
+      throughout this portfolio. This is more here to give an estimate of the level of code I would
+      be able to produce using HTML, CSS and JS knowledge at a glance.
+    </div>
+    <div class="boxes">
+
+      <div class="htmlbox">
+
+        &lt;div id="slider"&gt;<br />
+          &lt;a href="javascript://" class="control_next"&gt;&gt;&gt;&lt;/a&gt;<br />
+          &lt;a href="javascript://" class="control_prev"&gt;&lt;&lt;/a&gt;<br />
+          &lt;ul&gt;<br />
+            &lt;li class="slideone"&gt;SLIDE 1 &lt;/li&gt;<br />
+            &lt;li class="slidetwo"&gt;SLIDE 2&lt;/li&gt;<br />
+            &lt;li class="slidethree"&gt;SLIDE 3&lt;/li&gt;<br />
+            &lt;li class="slidefour"&gt;SLIDE 4&lt;/li&gt;<br />
+          &lt;/ul&gt;<br />
+        &lt;/div&gt;
+
+
+      </div>
+      <div class="cssbox">
+
+        #slider {<br />
+          position: relative;<br />
+          overflow: hidden;<br />
+          margin-bottom: 35px;<br />
+          margin: 35px 0;<br />
+          top: 30px;<br />
+          border-radius: 4px;<br />
+        }<br />
+<br /><br />
+        #slider ul {<br />
+          position: relative;<br />
+          margin: 0;<br />
+          padding: 0;<br />
+          height: 200px;<br />
+          list-style: none;<br />
+        }<br />
+<br /><br />
+        #slider ul li {<br />
+          position: relative;<br />
+          display: block;<br />
+          float: left;<br />
+          margin: 0;<br />
+          padding: 0;<br />
+          width: 1415px;<br />
+          height: 300px;<br />
+          text-align: center;<br />
+          line-height: 300px;<br />
+        }<br />
+<br /><br />
+        a.control_prev, a.control_next {<br />
+          position: absolute;<br />
+          top: 35%;<br />
+          z-index: 999;<br />
+          display: block;<br />
+          padding: 4% 3%;<br />
+          width: auto;<br />
+          height: auto;<br />
+          background: #2a2a2a;<br />
+          color: #fff;<br />
+          text-decoration: none;<br />
+          font-weight: 600;<br />
+          font-size: 18px;<br />
+          opacity: 0.8;<br />
+          cursor: pointer;<br />
+        }<br />
+<br /><br />
+        a.control_prev:hover, a.control_next:hover {<br />
+          opacity: 1;<br />
+          -webkit-transition: all 0.2s ease;<br />
+        }<br />
+<br /><br />
+        a.control_prev {<br />
+          border-radius: 0 2px 2px 0;<br />
+        }<br />
+<br /><br />
+        a.control_next {<br />
+          right: 0;<br />
+          border-radius: 2px 0 0 2px;<br />
+        }<br />
+
+      </div>
+      <div class="javascriptbox">
+
+
+
+          jQuery(document).ready(function ($) {<br />
+<br /><br />
+          	var slideCount = $('#slider ul li').length;<br />
+          	var slideWidth = $('#slider ul li').width();<br />
+          	var slideHeight = $('#slider ul li').height();<br />
+          	var sliderUlWidth = slideCount * slideWidth;<br />
+<br /><br />
+          	$('#slider').css({ width: slideWidth, height: slideHeight });<br />
+<br /><br />
+          	$('#slider ul').css({ width: sliderUlWidth, marginLeft: - slideWidth });<br />
+<br /><br />
+              $('#slider ul li:last-child').prependTo('#slider ul');<br />
+<br /><br />
+              function moveLeft() {<br />
+                  $('#slider ul').animate({<br />
+                      left: + slideWidth<br />
+                  }, 200, function () {<br />
+                      $('#slider ul li:last-child').prependTo('#slider ul');<br />
+                      $('#slider ul').css('left', '');<br />
+                  });<br />
+              };<br />
+<br /><br />
+              function moveRight() {<br />
+                  $('#slider ul').animate({<br />
+                      left: - slideWidth<br />
+                  }, 200, function () {<br />
+                      $('#slider ul li:first-child').appendTo('#slider ul');<br />
+                      $('#slider ul').css('left', '');<br />
+                  });<br />
+              };<br />
+<br /><br />
+              $('a.control_prev').click(function () {<br />
+                  moveLeft();<br />
+              });<br />
+<br /><br />
+              $('a.control_next').click(function () {<br />
+                  moveRight();<br />
+              });<br />
+<br /><br />
+          });<br />
+<br />
+
+      </div>
+
+  </div>
+
+    <div id="slidersample">
+      <a href="javascript://" class="control_next">>></a>
+      <a href="javascript://" class="control_prev"><<</a>
+      <ul>
+        <li>SLIDE 1</li>
+        <li>SLIDE 2</li>
+        <li>SLIDE 3</li>
+        <li>SLIDE 4</li>
+      </ul>
+    </div>
+
+    <div class= "footer">
+      <ul>
+        <li>Telephone number: 01634 300766</li>
+        <li>Email: billyarnold@icloud.com</li>
+      </ul>
+    </div>
+
+
+
+    <script type="text/javascript" src="jquery-3.1.1.js"></script>
+  <script type="text/javascript" src="main.js"></script>
+  <script src="work.js"></script> <!-- This made the main js work - don't know why - do not touch -->
+  </body>
+<html>
